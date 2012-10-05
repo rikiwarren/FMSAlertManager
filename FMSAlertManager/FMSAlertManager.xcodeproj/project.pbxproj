@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		341FB7331572BEF100BD6B89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341FB7321572BEF100BD6B89 /* Foundation.framework */; };
+		349B43F7161E0A0700C5FD12 /* FMSAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 349B43F6161E0A0700C5FD12 /* FMSAlertManager.m */; };
+		349B43F9161E0A4100C5FD12 /* FMSAlertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 349B43F8161E0A4100C5FD12 /* FMSAlertManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		341FB72F1572BEF100BD6B89 /* libFMSAlertManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMSAlertManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		341FB7321572BEF100BD6B89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		341FB7361572BEF100BD6B89 /* FMSAlertManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FMSAlertManager-Prefix.pch"; path = "FMSAlertManager/FMSAlertManager-Prefix.pch"; sourceTree = "<group>"; };
+		342001C2161F970E0057721B /* FMSAlertManager.docset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FMSAlertManager.docset; sourceTree = SOURCE_ROOT; };
+		349B43F6161E0A0700C5FD12 /* FMSAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMSAlertManager.m; path = FMSAlertManager/FMSAlertManager.m; sourceTree = SOURCE_ROOT; };
+		349B43F8161E0A4100C5FD12 /* FMSAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMSAlertManager.h; path = FMSAlertManager/FMSAlertManager.h; sourceTree = SOURCE_ROOT; };
+		34F21FBD161E23110045B31E /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		341FB72C1572BEF100BD6B89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341FB7331572BEF100BD6B89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		341FB7241572BEF100BD6B89 = {
+			isa = PBXGroup;
+			children = (
+				341FB7341572BEF100BD6B89 /* FMSAlertManager */,
+				341FB7311572BEF100BD6B89 /* Frameworks */,
+				341FB7301572BEF100BD6B89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		341FB7301572BEF100BD6B89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				341FB72F1572BEF100BD6B89 /* libFMSAlertManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		341FB7311572BEF100BD6B89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				341FB7321572BEF100BD6B89 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		341FB7341572BEF100BD6B89 /* FMSAlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				349B43F8161E0A4100C5FD12 /* FMSAlertManager.h */,
+				349B43F6161E0A0700C5FD12 /* FMSAlertManager.m */,
+				341FB7351572BEF100BD6B89 /* Supporting Files */,
+			);
+			name = FMSAlertManager;
+			path = RWAlertManager;
+			sourceTree = "<group>";
+		};
+		341FB7351572BEF100BD6B89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				342001C2161F970E0057721B /* FMSAlertManager.docset */,
+				34F21FBD161E23110045B31E /* doxygen.config */,
+				341FB7361572BEF100BD6B89 /* FMSAlertManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		341FB72D1572BEF100BD6B89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349B43F9161E0A4100C5FD12 /* FMSAlertManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		341FB72E1572BEF100BD6B89 /* FMSAlertManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341FB73C1572BEF100BD6B89 /* Build configuration list for PBXNativeTarget "FMSAlertManager" */;
+			buildPhases = (
+				341FB72B1572BEF100BD6B89 /* Sources */,
+				341FB72C1572BEF100BD6B89 /* Frameworks */,
+				341FB72D1572BEF100BD6B89 /* Headers */,
+				34E6C761161E1ED500A32627 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMSAlertManager;
+			productName = RWAlertManager;
+			productReference = 341FB72F1572BEF100BD6B89 /* libFMSAlertManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		341FB7261572BEF100BD6B89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Freelance Mad Science Labs";
+			};
+			buildConfigurationList = 341FB7291572BEF100BD6B89 /* Build configuration list for PBXProject "FMSAlertManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 341FB7241572BEF100BD6B89;
+			productRefGroup = 341FB7301572BEF100BD6B89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				341FB72E1572BEF100BD6B89 /* FMSAlertManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34E6C761161E1ED500A32627 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#  Build the doxygen documentation for the project and load the docset into Xcode.\n\n#  Use the following to adjust the value of the $DOXYGEN_PATH User-Defined Setting:\n#    Binary install location: /Applications/Doxygen.app/Contents/Resources/doxygen\n#    Source build install location: /usr/local/bin/doxygen\n\n# Cancel if $DOXYGEN_PATH is not set.\necho Checking the doxygen path\nif ! [ -f \"$DOXYGEN_PATH\" ]\nthen\necho Doxygen not found at $DOXYGEN_PATH.\necho You may need to install doxygen and set '$DOXYGEN_PATH' to build the docset.\nexit 0\nfi\n\n\n#  If the config file doesn't exist, run 'doxygen -g $SOURCE_ROOT/doxygen.config' to\n#   a get default file.\n\nif ! [ -f \"$SOURCE_ROOT/doxygen.config\" ]\nthen\necho doxygen config file does not exist\n$DOXYGEN_PATH -g \"$SOURCE_ROOT/doxygen.config\"\nfi\n\n#  Append the proper input/output directories and docset info to the config file.\n#  This works even though values are assigned higher up in the file. Easier than sed.\n\ncp \"$SOURCE_ROOT/doxygen.config\" \"$TEMP_DIR/doxygen.config\"\n\necho \"INPUT = \\\"$SOURCE_ROOT/FMSAlertManager\\\"\" >> \"$TEMP_DIR/doxygen.config\"\necho \"OUTPUT_DIRECTORY = \\\"$SOURCE_ROOT/FMSAlertManager.docset\\\"\" >> \"$TEMP_DIR/doxygen.config\"\necho \"GENERATE_DOCSET        = YES\" >> \"$TEMP_DIR/doxygen.config\"\necho \"DOCSET_BUNDLE_ID       = com.freelancemadscience.FMSAlertManager\" >> \"$TEMP_DIR/doxygen.config\"\n\n#  Run doxygen on the updated config file.\n#  Note: doxygen creates a Makefile that does most of the heavy lifting.\n\n$DOXYGEN_PATH \"$TEMP_DIR/doxygen.config\"\n\n#  make will invoke docsetutil. Take a look at the Makefile to see how this is done.\n\nmake -C \"$SOURCE_ROOT/FMSAlertManager.docset/html\" install\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		341FB72B1572BEF100BD6B89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				349B43F7161E0A0700C5FD12 /* FMSAlertManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		341FB73A1572BEF100BD6B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		341FB73B1572BEF100BD6B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		341FB73D1572BEF100BD6B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DOXYGEN_PATH = /usr/local/bin/doxygen;
+				DSTROOT = /tmp/FMSAlertManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMSAlertManager/FMSAlertManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = FMSAlertManager;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		341FB73E1572BEF100BD6B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DOXYGEN_PATH = /usr/local/bin/doxygen;
+				DSTROOT = /tmp/FMSAlertManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMSAlertManager/FMSAlertManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = FMSAlertManager;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3448EAEA15B507E100A34615 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		3448EAEB15B507E100A34615 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DOXYGEN_PATH = /usr/local/bin/doxygen;
+				DSTROOT = /tmp/FMSAlertManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMSAlertManager/FMSAlertManager-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = FMSAlertManager;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
+			};
+			name = AdHoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		341FB7291572BEF100BD6B89 /* Build configuration list for PBXProject "FMSAlertManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341FB73A1572BEF100BD6B89 /* Debug */,
+				341FB73B1572BEF100BD6B89 /* Release */,
+				3448EAEA15B507E100A34615 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		341FB73C1572BEF100BD6B89 /* Build configuration list for PBXNativeTarget "FMSAlertManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341FB73D1572BEF100BD6B89 /* Debug */,
+				341FB73E1572BEF100BD6B89 /* Release */,
+				3448EAEB15B507E100A34615 /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 341FB7261572BEF100BD6B89 /* Project object */;
+}

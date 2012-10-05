@@ -1,0 +1,44 @@
+\hypertarget{_f_m_s_alert_manager_8h}{\section{F\-M\-S\-Alert\-Manager/\-F\-M\-S\-Alert\-Manager.h File Reference}
+\label{_f_m_s_alert_manager_8h}\index{F\-M\-S\-Alert\-Manager/\-F\-M\-S\-Alert\-Manager.\-h@{F\-M\-S\-Alert\-Manager/\-F\-M\-S\-Alert\-Manager.\-h}}
+}
+{\ttfamily \#import $<$U\-I\-Kit/\-U\-I\-Kit.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}
+\begin{DoxyCompactList}\small\item\em Instantiates, displays and manages a set of {\ttfamily U\-I\-Alert\-Views} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \hyperlink{_f_m_s_alert_manager_8h_aeb26ee00331d24d0a23f90cbeceea2e0}{Response\-Block} )(void)
+\begin{DoxyCompactList}\small\item\em A block that is called when the alert view's button is pressed. \end{DoxyCompactList}\item 
+typedef void($^\wedge$ \hyperlink{_f_m_s_alert_manager_8h_a2323ab52f5fabfbcf9e806ffbb25e2c1}{Add\-Button\-Block} )(N\-S\-String $\ast$title, \hyperlink{_f_m_s_alert_manager_8h_aeb26ee00331d24d0a23f90cbeceea2e0}{Response\-Block} response)
+\begin{DoxyCompactList}\small\item\em A block used to add buttons to a {\ttfamily U\-I\-Alert\-View}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The public interface for \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}. 
+
+\subsection{Typedef Documentation}
+\hypertarget{_f_m_s_alert_manager_8h_a2323ab52f5fabfbcf9e806ffbb25e2c1}{\index{F\-M\-S\-Alert\-Manager.\-h@{F\-M\-S\-Alert\-Manager.\-h}!Add\-Button\-Block@{Add\-Button\-Block}}
+\index{Add\-Button\-Block@{Add\-Button\-Block}!FMSAlertManager.h@{F\-M\-S\-Alert\-Manager.\-h}}
+\subsubsection[{Add\-Button\-Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef Add\-Button\-Block}}\label{_f_m_s_alert_manager_8h_a2323ab52f5fabfbcf9e806ffbb25e2c1}
+
+
+A block used to add buttons to a {\ttfamily U\-I\-Alert\-View}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & An {\ttfamily N\-S\-String} containing the button's title. \\
+\hline
+{\em response} & A {\ttfamily Response\-Block} defining the action that will be triggered when the button is pressed. This can be {\ttfamily nil}.\\
+\hline
+\end{DoxyParams}
+{\ttfamily Add\-Button\-Block}s are passed to the {\ttfamily show\-Alert\-With\-Title\-:message\-:auto\-Close\-:configuration\-Block\-:}'s configuration block. You can call this block to add buttons to the alert view. \hypertarget{_f_m_s_alert_manager_8h_aeb26ee00331d24d0a23f90cbeceea2e0}{\index{F\-M\-S\-Alert\-Manager.\-h@{F\-M\-S\-Alert\-Manager.\-h}!Response\-Block@{Response\-Block}}
+\index{Response\-Block@{Response\-Block}!FMSAlertManager.h@{F\-M\-S\-Alert\-Manager.\-h}}
+\subsubsection[{Response\-Block}]{\setlength{\rightskip}{0pt plus 5cm}typedef Response\-Block}}\label{_f_m_s_alert_manager_8h_aeb26ee00331d24d0a23f90cbeceea2e0}
+
+
+A block that is called when the alert view's button is pressed. 
+
+{\ttfamily Response\-Block}s are simply blocks that don't take any arguments and don't return any values. {\ttfamily \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}} uses {\ttfamily Response\-Block}'s to define the actions that will be triggered when the corresponding {\ttfamily U\-I\-Alert\-View} button is pressed. 

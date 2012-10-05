@@ -1,0 +1,82 @@
+\hypertarget{interface_f_m_s_alert_manager}{\section{F\-M\-S\-Alert\-Manager Class Reference}
+\label{interface_f_m_s_alert_manager}\index{F\-M\-S\-Alert\-Manager@{F\-M\-S\-Alert\-Manager}}
+}
+
+
+Instantiates, displays and manages a set of {\ttfamily U\-I\-Alert\-Views}  
+
+
+
+
+{\ttfamily \#import $<$F\-M\-S\-Alert\-Manager.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_f_m_s_alert_manager_ada5d8100da27812849c0e5fe8725b14f}{show\-Alert\-With\-Title\-:message\-:auto\-Close\-:configuration\-Block\-:}
+\begin{DoxyCompactList}\small\item\em A one-\/stop method to create a {\ttfamily U\-I\-Alert\-View} instance, configure its buttons and button actions, and then display the alert view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_f_m_s_alert_manager_aa427130ba8302c751f1712c45a10ce5e}{shared\-Alert\-Manager}
+\begin{DoxyCompactList}\small\item\em Accessor for {\ttfamily \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}} singleton method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instantiates, displays and manages a set of {\ttfamily U\-I\-Alert\-Views} 
+
+{\ttfamily \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}} is a singleton class. It is used to instantiate, configure and display {\ttfamily U\-I\-Alert\-View}s. It can also auto-\/close alert views when the application goes to the background.
+
+{\ttfamily \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}} lets us replace the normal delegate-\/based A\-P\-I for alerts with a more conveniant block-\/based A\-P\-I. This lets us easily create a {\ttfamily U\-I\-Alert\-View}, and define both the buttons and the actions that will be triggered in one place. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_f_m_s_alert_manager_aa427130ba8302c751f1712c45a10ce5e}{\index{F\-M\-S\-Alert\-Manager@{F\-M\-S\-Alert\-Manager}!shared\-Alert\-Manager@{shared\-Alert\-Manager}}
+\index{shared\-Alert\-Manager@{shared\-Alert\-Manager}!FMSAlertManager@{F\-M\-S\-Alert\-Manager}}
+\subsubsection[{shared\-Alert\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) shared\-Alert\-Manager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_f_m_s_alert_manager_aa427130ba8302c751f1712c45a10ce5e}
+
+
+Accessor for {\ttfamily \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}} singleton method. 
+
+\begin{DoxyReturn}{Returns}
+a reference to the {\ttfamily \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}} singleton.
+\end{DoxyReturn}
+This gives us access to the shared {\ttfamily \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}} instance. We can then use this instance to create, configure, display and manage our alert views. \hypertarget{interface_f_m_s_alert_manager_ada5d8100da27812849c0e5fe8725b14f}{\index{F\-M\-S\-Alert\-Manager@{F\-M\-S\-Alert\-Manager}!show\-Alert\-With\-Title\-:message\-:auto\-Close\-:configuration\-Block\-:@{show\-Alert\-With\-Title\-:message\-:auto\-Close\-:configuration\-Block\-:}}
+\index{show\-Alert\-With\-Title\-:message\-:auto\-Close\-:configuration\-Block\-:@{show\-Alert\-With\-Title\-:message\-:auto\-Close\-:configuration\-Block\-:}!FMSAlertManager@{F\-M\-S\-Alert\-Manager}}
+\subsubsection[{show\-Alert\-With\-Title\-:message\-:auto\-Close\-:configuration\-Block\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) show\-Alert\-With\-Title\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{title}
+\item[{message:(N\-S\-String $\ast$)}]{message}
+\item[{autoClose:(B\-O\-O\-L)}]{auto\-Close}
+\item[{configurationBlock:({\bf Add\-Button\-Block} add\-Button)}]{config}
+\end{DoxyParamCaption}
+}}\label{interface_f_m_s_alert_manager_ada5d8100da27812849c0e5fe8725b14f}
+
+
+A one-\/stop method to create a {\ttfamily U\-I\-Alert\-View} instance, configure its buttons and button actions, and then display the alert view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & An {\ttfamily N\-S\-String} containing the {\ttfamily U\-I\-Alert\-View}'s title \\
+\hline
+{\em message} & An {\ttfamily N\-S\-String} containing the {\ttfamily U\-I\-Alert\-View}'s message \\
+\hline
+{\em auto\-Close} & A {\ttfamily B\-O\-O\-L}. If {\ttfamily Y\-E\-S} the {\ttfamily \hyperlink{interface_f_m_s_alert_manager}{F\-M\-S\-Alert\-Manager}} will automatically dismiss the view if the app goes into the background. \\
+\hline
+{\em config} & A block used to configure the {\ttfamily U\-I\-Alert\-View}'s buttons. This block takes a single argument, which is also an {\ttfamily Add\-Button\-Block} block. We can call this block to add buttons to our {\ttfamily U\-I\-Alert\-View}. Buttons are added in order. The first button added is at index 0. The second at index 1, etc.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a reference to the U\-I\-Alert\-View. We can, optionally, store a reference to this view, letting us programatically trigger buttons. Alternatively, we can dismiss the view without triggering any button actions by calling {\ttfamily dismiss\-With\-Clicked\-Button\-Index\-:animated\-:} and passing in {\ttfamily -\/1} for the button index.
+\end{DoxyReturn}
+This method lets us instantiate, configure and display a {\ttfamily U\-I\-Alert\-View.} Inside the configuration block, we call the {\ttfamily Add\-Button\-Block} zero or more times to add buttons to our alert. The Add\-Button\-Block takes two arguments\-: An {\ttfamily N\-S\-String} containing the button's title, and a {\ttfamily Response\-Block} containing the action to be performed if the button is pressed.
+
+If you do not add any buttons to the alert view, it will be displayed and then automatically dismissed after 2 seconds. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+F\-M\-S\-Alert\-Manager/\hyperlink{_f_m_s_alert_manager_8h}{F\-M\-S\-Alert\-Manager.\-h}\item 
+F\-M\-S\-Alert\-Manager/F\-M\-S\-Alert\-Manager.\-m\end{DoxyCompactItemize}
